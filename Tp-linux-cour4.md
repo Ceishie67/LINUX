@@ -405,7 +405,7 @@ success
 
 3. **Restreindre SSH à un sous-réseau spécifique** :
 ```
-[root@vbox ~]# sudo firewall-cmd --zone=public --add-rich-rule='rule family="ipv4" source address="10.6.1.12/24" service name="ssh" accept' --permanent
+[root@vbox ~]# sudo firewall-cmd --zone=public --add-rich-rule='rule family="ipv4" source address="10.6.1.0/24" service name="ssh" accept' --permanent
 success
 [root@vbox ~]# sudo firewall-cmd --zone=public --add-rich-rule='rule family="ipv4" service name="ssh" reject' --permanent
 success
